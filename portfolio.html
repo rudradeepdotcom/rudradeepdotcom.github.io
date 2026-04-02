@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Precision Archive</title>
+    <meta name="description" content="A curated selection of data-driven narratives, from high-frequency financial modeling to neural network architectures.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <a href="index.html" class="nav__logo">precision<span>.</span></a>
+        <div class="nav__links" id="navLinks">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="portfolio.html" class="nav__link active">Portfolio</a>
+            <a href="about.html" class="nav__link">About</a>
+            <a href="about.html#contact" class="nav__link">Contact</a>
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <!-- Hero -->
+        <section class="hero section container" style="min-height:60vh;">
+            <p class="hero__eyebrow">Selected Work</p>
+            <h1 class="hero__title display-lg">Analytical Rigour Met<br>with Visual Clarity.</h1>
+            <p class="hero__subtitle">A curated selection of data-driven narratives, ranging from high-frequency financial modeling to neural network architectures.</p>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="section section--surface-low">
+            <div class="container">
+                <div class="grid grid--3">
+                    <div class="project-card reveal reveal-delay-1">
+                        <span class="project-card__number">PROJECT 01</span>
+                        <h3 class="project-card__title">Predictive Liquidity Modeling</h3>
+                        <p class="project-card__text">Implementing a localized stochastic volatility model for real-time asset pricing and risk assessment in high-frequency trading environments.</p>
+                        <div class="chips"><span class="chip">Python</span><span class="chip">Stochastic Models</span></div>
+                    </div>
+                    <div class="project-card reveal reveal-delay-2">
+                        <span class="project-card__number">PROJECT 02</span>
+                        <h3 class="project-card__title">Neural Attribution Logic</h3>
+                        <p class="project-card__text">Deconstructing black-box algorithms through Layer-wise Relevance Propagation to ensure ethical data practices.</p>
+                        <div class="chips"><span class="chip">Deep Learning</span><span class="chip">XAI</span></div>
+                    </div>
+                    <div class="project-card reveal reveal-delay-3">
+                        <span class="project-card__number">PROJECT 03</span>
+                        <h3 class="project-card__title">Consumer Sentiment Mapping</h3>
+                        <p class="project-card__text">Processing 2M+ data points from social APIs to map regional sentiment shifts regarding sustainable tech.</p>
+                        <div class="chips"><span class="chip">NLP</span><span class="chip">2M+ Records</span></div>
+                    </div>
+                    <div class="project-card reveal reveal-delay-1">
+                        <span class="project-card__number">PROJECT 04</span>
+                        <h3 class="project-card__title">Supply Chain Optimization</h3>
+                        <p class="project-card__text">Graph-based analysis of global logistics to identify and mitigate bottleneck risks in tier-2 manufacturing.</p>
+                        <div class="chips"><span class="chip">Graph Theory</span><span class="chip">Tableau</span></div>
+                    </div>
+                    <div class="project-card reveal reveal-delay-2">
+                        <span class="project-card__number">PROJECT 05</span>
+                        <h3 class="project-card__title">Churn Prediction V2</h3>
+                        <p class="project-card__text">Reducing customer attrition by 14% through an ensemble XGBoost model integrated into SaaS workflows.</p>
+                        <div class="chips"><span class="chip">XGBoost</span><span class="chip chip--tertiary">–14% Churn</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deep-Dive Case Study -->
+        <section class="section section--surface">
+            <div class="container">
+                <div class="deep-dive reveal">
+                    <div class="deep-dive__header">
+                        <p class="deep-dive__step">Featured Case Study</p>
+                        <h2 class="display-md">The Volatility Index</h2>
+                        <p class="deep-dive__text" style="margin-top:var(--spacing-4);">Decoding supply chain disruptions through high-frequency logistics data and Bayesian structural time-series modeling.</p>
+                    </div>
+
+                    <!-- 01 Challenge -->
+                    <div class="deep-dive__section reveal">
+                        <p class="deep-dive__step">01 / The Challenge</p>
+                        <h3 class="deep-dive__subtitle">A Fragmented Landscape</h3>
+                        <p class="deep-dive__text">Global logistics firms were struggling with a 14% variance in arrival time predictions, leading to millions in annual port fees. The primary hurdle was the "Black Swan" effect—unforeseen regional disruptions that standard linear models failed to capture.</p>
+                        <div class="stats-row" style="margin-top:var(--spacing-8);">
+                            <div class="stat">
+                                <p class="stat__value">14.2%</p>
+                                <p class="stat__label">Prediction Variance</p>
+                            </div>
+                            <div class="stat">
+                                <p class="stat__value">$2.4M</p>
+                                <p class="stat__label">Annual Latency Cost</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 02 Data -->
+                    <div class="deep-dive__section reveal">
+                        <p class="deep-dive__step">02 / The Data</p>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--spacing-8); margin-top:var(--spacing-4);">
+                            <div>
+                                <h4 class="deep-dive__subtitle">Sources</h4>
+                                <div class="deep-dive__sources">
+                                    <div class="deep-dive__source">
+                                        <svg class="deep-dive__source-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>
+                                        Real-time AIS Vessel Tracking
+                                    </div>
+                                    <div class="deep-dive__source">
+                                        <svg class="deep-dive__source-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>
+                                        Historical Port Congestion Logs
+                                    </div>
+                                    <div class="deep-dive__source">
+                                        <svg class="deep-dive__source-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/></svg>
+                                        NOAA Meteorological Data
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="deep-dive__subtitle">Toolkit</h4>
+                                <div class="toolkit-row">
+                                    <span class="toolkit-chip">Python</span>
+                                    <span class="toolkit-chip">PostgreSQL</span>
+                                    <span class="toolkit-chip">Tableau</span>
+                                    <span class="toolkit-chip">PyMC3</span>
+                                    <span class="toolkit-chip">Pandas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 03 Methodology -->
+                    <div class="deep-dive__section reveal">
+                        <p class="deep-dive__step">03 / The Methodology</p>
+                        <h3 class="deep-dive__subtitle">Precision in Process</h3>
+                        <div class="deep-dive__grid">
+                            <div class="deep-dive__item">
+                                <h4 class="deep-dive__item-title">Anomaly Filtration</h4>
+                                <p class="deep-dive__item-text">Automated scripts to identify and remove AIS transmission gaps greater than 4 hours.</p>
+                            </div>
+                            <div class="deep-dive__item">
+                                <h4 class="deep-dive__item-title">Feature Engineering</h4>
+                                <p class="deep-dive__item-text">Synthesizing 'Port Saturation' metrics by correlating vessel density with berth availability.</p>
+                            </div>
+                            <div class="deep-dive__item">
+                                <h4 class="deep-dive__item-title">Bayesian Modeling</h4>
+                                <p class="deep-dive__item-text">Applying MCMC sampling to account for uncertainty in localized weather-induced delays.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 04 Insights -->
+                    <div class="deep-dive__section reveal">
+                        <p class="deep-dive__step">04 / The Insights</p>
+                        <h3 class="deep-dive__subtitle">Visualizing Convergence</h3>
+                        <p class="deep-dive__text">Our analysis revealed that 62% of arrival delays were not caused by oceanic conditions, but by 'Invisible Bottlenecks'—minor local labor shifts identifiable 72 hours in advance via density patterns.</p>
+                        <div class="viz-placeholder">
+                            <div class="viz-placeholder__grid"></div>
+                            <span class="viz-placeholder__label">Convergence Visualization — Interactive Chart</span>
+                        </div>
+                    </div>
+
+                    <!-- 05 Impact -->
+                    <div class="deep-dive__section reveal">
+                        <p class="deep-dive__step">05 / The Impact</p>
+                        <h3 class="deep-dive__subtitle">Strategic Resolution</h3>
+                        <p class="deep-dive__text">By integrating the predictive Bayesian model into the fleet's dispatch system, the client achieved an 11% reduction in unplanned port dwell time within the first quarter.</p>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--spacing-6); margin-top:var(--spacing-8);">
+                            <div class="impact-card">
+                                <p class="impact-card__label">Precision Boost</p>
+                                <p class="stat__value" style="margin-bottom:var(--spacing-3);">76% → 91%</p>
+                                <p class="impact-card__text">Model accuracy increased for trans-pacific routes.</p>
+                            </div>
+                            <div class="impact-card">
+                                <p class="impact-card__label">Cost Savings</p>
+                                <p class="stat__value" style="margin-bottom:var(--spacing-3);">$1.8M</p>
+                                <p class="impact-card__text">Estimated annual savings in dynamic route optimization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section--surface-low">
+            <div class="cta">
+                <div class="container--centered reveal">
+                    <h2 class="cta__title">Ready to unlock your data's story?</h2>
+                    <p class="cta__text">Available for consulting on specialized data architecture and advanced predictive analytics.</p>
+                    <div class="btn-group" style="opacity:1;animation:none;">
+                        <a href="about.html#contact" class="btn btn--primary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container--centered">
+                <div class="footer__inner">
+                    <p class="footer__copy">© 2026 Precision Archive. Rony Mandal.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link">LinkedIn</a>
+                        <a href="#" class="footer__social-link">GitHub</a>
+                        <a href="#" class="footer__social-link">Twitter</a>
+                        <a href="#" class="footer__social-link">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

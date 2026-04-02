@@ -3,84 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst Portfolio | Rony</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Precision Archive | Data Analyst Portfolio</title>
+    <meta name="description" content="Senior Data Analyst specializing in architecting technical narratives through rigorous analysis and institutional-grade visualization.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans">
+<body>
 
-    <header class="bg-slate-900 text-white py-20 px-6 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Rony Mandal</h1>
-        <p class="text-xl text-slate-400 mb-8 uppercase tracking-widest">Data Analyst | IT Professional</p>
-        <div class="flex justify-center gap-6 text-2xl">
-            <a href="#" class="hover:text-blue-400"><i class="fab fa-github"></i></a>
-            <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:your-email@example.com" class="hover:text-blue-400"><i class="fas fa-envelope"></i></a>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="index.html" class="nav__logo">precision<span>.</span></a>
+        <div class="nav__links" id="navLinks">
+            <a href="index.html" class="nav__link active">Home</a>
+            <a href="portfolio.html" class="nav__link">Portfolio</a>
+            <a href="about.html" class="nav__link">About</a>
+            <a href="about.html#contact" class="nav__link">Contact</a>
         </div>
-    </header>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-    <section class="max-w-5xl mx-auto py-16 px-6">
-        <h2 class="text-3xl font-bold mb-10 text-center border-b-2 border-slate-200 pb-4">Technical Toolbox</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="p-4 bg-white shadow-sm rounded-lg border border-slate-100">
-                <i class="fab fa-python text-4xl text-blue-500 mb-2"></i>
-                <p class="font-bold">Python</p>
-                <p class="text-xs text-slate-500">Pandas, NumPy, Scikit-Learn</p>
-            </div>
-            <div class="p-4 bg-white shadow-sm rounded-lg border border-slate-100">
-                <i class="fas fa-database text-4xl text-orange-500 mb-2"></i>
-                <p class="font-bold">SQL</p>
-                <p class="text-xs text-slate-500">PostgreSQL, MySQL, BigQuery</p>
-            </div>
-            <div class="p-4 bg-white shadow-sm rounded-lg border border-slate-100">
-                <i class="fas fa-chart-bar text-4xl text-green-500 mb-2"></i>
-                <p class="font-bold">Visualization</p>
-                <p class="text-xs text-slate-500">Tableau, Power BI, Matplotlib</p>
-            </div>
-            <div class="p-4 bg-white shadow-sm rounded-lg border border-slate-100">
-                <i class="fas fa-terminal text-4xl text-slate-700 mb-2"></i>
-                <p class="font-bold">Tools</p>
-                <p class="text-xs text-slate-500">Excel, Git, Docker, AWS</p>
-            </div>
-        </div>
-    </section>
+    <div class="page-wrapper">
 
-    <section class="bg-slate-100 py-16 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-                    <div class="h-48 bg-slate-300 flex items-center justify-center text-slate-500 font-bold">Project Thumbnail</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-blue-700">Customer Churn Prediction</h3>
-                        <p class="text-slate-600 mb-4">Developed a machine learning model to predict subscriber churn with 88% accuracy using Python and Scikit-Learn.</p>
-                        <div class="flex flex-wrap gap-2 mb-4 text-xs font-semibold uppercase text-slate-500">
-                            <span>Python</span> | <span>Random Forest</span> | <span>Pandas</span>
+        <!-- Hero Section -->
+        <section class="hero section container">
+            <canvas class="hero-canvas" id="heroCanvas"></canvas>
+            <p class="hero__eyebrow">Empowering Decisions</p>
+            <h1 class="hero__title display-lg">Unlocking Insights<br>from Data</h1>
+            <p class="hero__subtitle">Senior Data Analyst specializing in architecting technical narratives through rigorous analysis and institutional-grade visualization.</p>
+            <div class="btn-group">
+                <a href="about.html#contact" class="btn btn--primary">Initiate Contact</a>
+                <a href="portfolio.html" class="btn btn--secondary">
+                    View Portfolio
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Technical Apparatus -->
+        <section class="section section--surface-low">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-header__eyebrow">Core Competencies</p>
+                    <h2 class="section-header__title">Technical Apparatus</h2>
+                </div>
+                <div class="grid grid--4">
+                    <div class="card reveal reveal-delay-1">
+                        <div class="card__icon">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
                         </div>
-                        <a href="#" class="inline-block bg-slate-900 text-white px-4 py-2 rounded text-sm font-bold hover:bg-blue-600 transition">View on GitHub</a>
+                        <h3 class="card__title">Advanced SQL Architecture</h3>
+                        <p class="card__text">Expertise in complex query optimization, window functions, and multi-layered database schema design for high-load analytical environments.</p>
+                    </div>
+                    <div class="card reveal reveal-delay-2">
+                        <div class="card__icon">
+                            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+                        </div>
+                        <h3 class="card__title">Python Engineering</h3>
+                        <p class="card__text">Pandas, NumPy, Scikit-learn for automated ETL pipelines and predictive modeling at scale.</p>
+                    </div>
+                    <div class="card reveal reveal-delay-3">
+                        <div class="card__icon">
+                            <svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                        </div>
+                        <h3 class="card__title">Tableau Logic</h3>
+                        <p class="card__text">Designing dynamic executive dashboards with complex Level of Detail (LOD) expressions and real-time data integration.</p>
+                    </div>
+                    <div class="card reveal reveal-delay-4">
+                        <div class="card__icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="card__title">Institutional Data Hygiene</h3>
+                        <p class="card__text">Maintaining integrity across distributed datasets through rigorous validation frameworks and automated cleaning pipelines.</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow">
-                    <div class="h-48 bg-slate-300 flex items-center justify-center text-slate-500 font-bold">Project Thumbnail</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2 text-blue-700">Financial Sales Dashboard</h3>
-                        <p class="text-slate-600 mb-4">Integrated multiple SQL data sources into a dynamic Tableau dashboard for real-time sales tracking.</p>
-                        <div class="flex flex-wrap gap-2 mb-4 text-xs font-semibold uppercase text-slate-500">
-                            <span>SQL</span> | <span>Tableau</span> | <span>ETL</span>
+        <!-- Analytical Inquiries — Case Studies -->
+        <section class="section section--surface">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-header__eyebrow">Selected Work</p>
+                    <h2 class="section-header__title">Analytical Inquiries</h2>
+                    <p class="section-header__subtitle">Selected projects showcasing the translation of raw metrics into strategic business frameworks.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div class="case-study reveal reveal-delay-1">
+                        <p class="case-study__label">Case Study 01 / Fintech</p>
+                        <h3 class="case-study__title">Predictive Liquidity Modeling</h3>
+                        <p class="case-study__text">Engineered a Python-based forecasting engine reducing capital variance by 22%. Integrated real-time SQL streaming for instantaneous risk assessment.</p>
+                        <div class="chips">
+                            <span class="chip">Python</span>
+                            <span class="chip">SQL</span>
+                            <span class="chip chip--tertiary">–22% Variance</span>
                         </div>
-                        <a href="#" class="inline-block bg-slate-900 text-white px-4 py-2 rounded text-sm font-bold hover:bg-blue-600 transition">View Dashboard</a>
+                    </div>
+                    <div class="case-study reveal reveal-delay-2">
+                        <p class="case-study__label">Case Study 02 / Supply Chain</p>
+                        <h3 class="case-study__title">Logistics Latency Analysis</h3>
+                        <p class="case-study__text">Visualizing global supply chain bottlenecks. Using Tableau to map 4.2M transit records, identifying structural inefficiencies in the EMEA region.</p>
+                        <div class="chips">
+                            <span class="chip">Tableau</span>
+                            <span class="chip">4.2M Records</span>
+                            <span class="chip chip--tertiary">EMEA Focus</span>
+                        </div>
                     </div>
                 </div>
-
+                <div style="text-align: center; margin-top: var(--spacing-10);">
+                    <a href="portfolio.html" class="btn btn--outline">
+                        Explore Full Portfolio
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="py-12 text-center text-slate-500 border-t border-slate-200">
-        <p>© 2026 Rony Mandal. Built with HTML & Tailwind CSS.</p>
-    </footer>
+        <!-- CTA Section -->
+        <section class="section section--surface-low">
+            <div class="cta">
+                <div class="container--centered reveal">
+                    <h2 class="cta__title">Ready for the next breakthrough?</h2>
+                    <p class="cta__text">I am currently accepting inquiries for senior-level analytical roles and high-impact consultancy projects.</p>
+                    <div class="btn-group" style="opacity:1; animation:none;">
+                        <a href="about.html#contact" class="btn btn--primary">Initiate Contact</a>
+                        <a href="#" class="btn btn--secondary">
+                            Download Technical CV
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container--centered">
+                <div class="footer__inner">
+                    <p class="footer__copy">© 2026 Precision Archive. Rony Mandal.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link">LinkedIn</a>
+                        <a href="#" class="footer__social-link">GitHub</a>
+                        <a href="#" class="footer__social-link">Twitter</a>
+                        <a href="#" class="footer__social-link">Medium</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
